@@ -6,7 +6,7 @@ import { TbFileCertificate } from 'react-icons/tb';
 import { GoGraph } from 'react-icons/go';
 import { TbCamera } from 'react-icons/tb';
 import { RiQuestionLine } from 'react-icons/ri';
-const logo =  require("../assets/ico.png");
+const logo = require("../assets/ico.png");
 
 export default function Sidebar() {
   return (
