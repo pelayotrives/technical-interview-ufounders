@@ -6,64 +6,31 @@ import { TbFileCertificate } from 'react-icons/tb';
 import { GoGraph } from 'react-icons/go';
 import { TbCamera } from 'react-icons/tb';
 import { RiQuestionLine } from 'react-icons/ri';
-const logo = require("../assets/ico.png");
+const logo = require("../assets/icon.png");
 
 export default function Sidebar() {
   return (
-    <div className="sidebar h-screen w-[72px]">
-      <aside className="flex flex-col justify-start justify-items-start items-start content-start mt-2">
-
-          <div className="h-1/4 flex flex-col justify-center justify-items-center items-center content-center overflow-y-auto">
-            <ul>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid">
-                  <TbMenu2 size={21} color={'#A3ABB5'}/>
-                </a>
-              </li>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid mt-4">
-                  <img src={logo} alt="Ufounders Logo"/>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="h-full flex flex-col justify-center justify-items-center items-center content-center overflow-y-auto mt-24">
-            <ul>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-black border-solid">
-                  <FaDiceFour size={21} color={'#000000'}/>
-                </a>
-              </li>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid">
-                  <TbSchool size={21} color={'#A3ABB5'}/>
-                </a>
-              </li>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid">
-                  <TbFileCertificate size={21} color={'#A3ABB5'}/>
-                </a>
-              </li>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid">
-                  <GoGraph size={21} color={'#A3ABB5'}/>
-                </a>
-              </li>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid">
-                  <TbCamera size={21} color={'#A3ABB5'}/>
-                </a>
-              </li>
-              <li>
-                <a href="/" className="flex items-center p-4 border-l-4 border-transparent border-solid">
-                  <RiQuestionLine size={21} color={'#A3ABB5'}/>
-                </a>
-              </li>
-            </ul>
-        </div>
-        
-      </aside>
+    <div className="sidebar fixed flex flex-col justify-between justify-items-center items-center content-center self-center h-screen">
+      <div className="first-group space-y-6 flex flex-col justify-center justify-items-center items-center content-center self-center h-1/4">
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><TbMenu2 className="hover:scale-110 transition-all" size={25} color={'#858B94'}/></a>
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><img className="hover:scale-110 transition-all" src={logo} width={25} alt="Ufounders Logo" /></a>
+      </div>
+      <div className="second-group flex flex-col justify-start justify-items-center items-start content-center self-center mt-28 h-3/4">
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-black border-solid px-6 py-4"><FaDiceFour className="hover:scale-110 transition-all" size={25} color={'#000'}/></a>
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><TbSchool className="hover:scale-110 transition-all" size={25} color={'#858B94'}/></a>
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><TbFileCertificate className="hover:scale-110 transition-all" size={25} color={'#858B94'}/></a>
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><GoGraph className="hover:scale-110 transition-all" size={25} color={'#858B94'}/></a>
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><TbCamera className="hover:scale-110 transition-all" size={25} color={'#858B94'}/></a>
+        {/* eslint-disable-next-line */}
+        <a href="#" className="border-l-4 border-transparent border-solid px-6 py-4"><RiQuestionLine className="hover:scale-110 transition-all" size={25} color={'#858B94'}/></a>
+      </div>
     </div>
   );
 }
